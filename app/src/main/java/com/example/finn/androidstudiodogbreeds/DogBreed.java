@@ -16,7 +16,7 @@ public class DogBreed {
         this.size = size;
     }
 
-    public int getRanking() { return ranking; }
+    public Integer getRanking() { return ranking; }
 
     public String getBreed() { return breed; }
 
