@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -36,6 +37,9 @@ class TopDogBreedsAdapter extends ArrayAdapter<DogBreed> {
 
         TextView size = (TextView) listItemView.findViewById(R.id.size);
         size.setText(currentDogBreed.getSize().toString());
+
+        ImageView img = (ImageView) listItemView.findViewById(R.id.img);
+        img.setImageDrawable(currentDogBreed.getImg().toDrawable());
 
         listItemView.setTag(currentDogBreed);
 
